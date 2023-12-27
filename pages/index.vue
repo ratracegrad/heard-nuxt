@@ -13,11 +13,9 @@ interface Transaction {
 }
 /* --- End of TypeScript Types --- */
 
-
 /* --- Variables --- */
 const transactions = ref<Transaction[]>([])
 /* --- End of Variables --- */
-
 
 /* --- Functions --- */
 async function readTransactions() {
@@ -42,7 +40,6 @@ function deleteTransaction(id: number) {
   console.log('button clicked', id)
 }
 /* --- End of Functions --- */
-
 
 /* --- Lifecycle Hooks --- */
 onMounted(() => {
