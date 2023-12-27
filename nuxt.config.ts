@@ -1,4 +1,3 @@
-import { pwa } from './config/pwa'
 import { appDescription } from './constants/index'
 
 export default defineNuxtConfig({
@@ -7,7 +6,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    '@vite-pwa/nuxt',
     '@nuxtjs/supabase',
   ],
 
@@ -57,7 +55,9 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa,
+  supabase: {
+    redirect: false,
+  },
 
   devtools: {
     enabled: true,
