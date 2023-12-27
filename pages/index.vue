@@ -15,6 +15,7 @@ interface Transaction {
 
 /* --- Variables --- */
 const transactions = ref<Transaction[]>([])
+const temp = ref('')
 /* --- End of Variables --- */
 
 /* --- Functions --- */
@@ -29,15 +30,15 @@ async function readTransactions() {
 }
 
 function createTransaction() {
-  console.log('button clicked')
+  temp.value = 'create'
 }
 
 function updateTransaction(id: number) {
-  console.log('button clicked', id)
+  temp.value = `update${id}`
 }
 
 function deleteTransaction(id: number) {
-  console.log('button clicked', id)
+  temp.value = `delete${id}`
 }
 /* --- End of Functions --- */
 
