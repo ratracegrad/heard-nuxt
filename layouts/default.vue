@@ -1,5 +1,5 @@
 <template>
-  <main class="px-10 py-20 text-center">
+  <main class="mx-auto max-w-7xl flex flex-col">
     <slot />
   </main>
 </template>
