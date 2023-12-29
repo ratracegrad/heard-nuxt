@@ -74,31 +74,31 @@ function handleUpdate() {
                   <div class="col-span-full">
                     <label for="title" class="block text-sm text-gray-900 font-medium leading-6">Title</label>
                     <div class="mt-2">
-                      <input id="title" :value="props.transaction.title" type="text" name="title" autocomplete="title" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="title = $event.target?.value">
+                      <input id="title" :value="props.transaction.title" type="text" name="title" autocomplete="title" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="title = ($event.target as HTMLInputElement)?.value">
                     </div>
                   </div>
                   <div class="col-span-full">
                     <label for="description" class="block text-sm text-gray-900 font-medium leading-6">Description</label>
                     <div class="mt-2">
-                      <input id="description" :value="props.transaction.description" type="text" name="description" autocomplete="description" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="description = $event.target?.value">
+                      <input id="description" :value="props.transaction.description" type="text" name="description" autocomplete="description" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="description = ($event.target as HTMLInputElement)?.value">
                     </div>
                   </div>
                   <div class="col-span-full">
                     <label for="amount" class="block text-sm text-gray-900 font-medium leading-6">Amount</label>
                     <div class="mt-2">
-                      <input id="amount" :value="props.transaction.amount" type="number" name="amount" autocomplete="amount" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="amount = $event.target?.value">
+                      <input id="amount" :value="props.transaction.amount" type="number" name="amount" autocomplete="amount" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="amount = Number(($event.target as HTMLInputElement)?.value)">
                     </div>
                   </div>
                   <div class="col-span-full">
                     <label for="fromAccount" class="block text-sm text-gray-900 font-medium leading-6">From Account</label>
                     <div class="mt-2">
-                      <input id="fromAccount" :value="props.transaction.fromAccount" type="text" name="fromAccount" autocomplete="fromAccount" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="fromAccount = $event.target?.value">
+                      <input id="fromAccount" :value="props.transaction.fromAccount" type="text" name="fromAccount" autocomplete="fromAccount" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="fromAccount = ($event.target as HTMLInputElement)?.value">
                     </div>
                   </div>
                   <div class="col-span-full">
                     <label for="toAccount" class="block text-sm text-gray-900 font-medium leading-6">To Account</label>
                     <div class="mt-2">
-                      <input id="toAccount" :value="props.transaction.toAccount" type="text" name="toAccount" autocomplete="toAccount" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="toAccount = $event.target?.value">
+                      <input id="toAccount" :value="props.transaction.toAccount" type="text" name="toAccount" autocomplete="toAccount" class="block w-full border-0 rounded-md py-1.5 text-gray-900 shadow-sm ring-1 ring-gray-300 ring-inset sm:text-sm placeholder:text-gray-400 sm:leading-6 focus:ring-2 focus:ring-gray-600 focus:ring-inset" @input="toAccount = ($event.target as HTMLInputElement)?.value">
                     </div>
                   </div>
                 </div>
